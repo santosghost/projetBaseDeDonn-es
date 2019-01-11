@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE schemaea SYSTEM "test1.dtd">
+	<schemaea>
+		<entite id="e1">
+			<nomentite>E1</nomentite>
+			<propriete cle="oui" type="entier">p1</propriete>
+			<propriete cle="non" type="chaine" longueur="20">p2</propriete>
+		</entite>
+		<entite id="e2">
+			<nomentite>E2</nomentite>
+			<propriete cle="oui" type="entier">p3</propriete>
+			<propriete cle="non" type="chaine" longueur="10">p4</propriete>
+			<propriete cle="non" type="chaine" longueur="30">p5</propriete>
+		</entite> 
+		<association id="a1">
+			<nomasso>A1</nomasso>
+			<entasso role="r1" cardmin="1" cardmax="N" source="e1"/>
+			<entasso role="r2" cardmin="1" cardmax="N" source="e2"/>
+			<propriete type="entier">pa1</propriete>
+		</association>
+</schemaea>
+
+

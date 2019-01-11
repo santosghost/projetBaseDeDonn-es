@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT schemaea ANY>
+<!ELEMENT entite (nomentite?,propriete*)>
+<!ELEMENT association (nomasso?,entasso*,propriete*)>
+<!ELEMENT nomentite (#PCDATA)>
+<!ELEMENT propriete (#PCDATA)>
+<!ELEMENT entasso EMPTY>
+<!ELEMENT nomasso (#PCDATA)>
+<!ATTLIST entite
+	id CDATA #REQUIRED>
+<!ATTLIST association
+	id CDATA #REQUIRED>
+
+<!ATTLIST propriete
+	cle CDATA #IMPLIED
+	type CDATA #REQUIRED
+	longueur CDATA #IMPLIED >
+
+<!ATTLIST entasso
+	role CDATA #REQUIRED
+	cardmin	CDATA #REQUIRED
+	cardmax	CDATA #REQUIRED
+	source CDATA #REQUIRED>
