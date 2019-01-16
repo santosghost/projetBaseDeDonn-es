@@ -1,0 +1,22 @@
+{
+
+   "entite1":{
+
+      "propriete11":{"id11":"nomprop11","cle":"oui"},
+      "propriete12":{"id12":"nomprop12","cle":"non"}
+	
+	},
+
+   "entite2":{
+
+       "propriete21":{"id21":"nomprop21","cle":"oui"}
+	     },
+
+   "association12":{
+
+     "entasso1":{"ida":"entite1","cardmin":"1","cardmax":"N","role":"nomrole1"},
+     "entasso2":{"ida":"entite2","cardmin":"0","cardmax":"1","role":"nomrole2"},
+     "propriete1a":{"id1a":"propriete1a"}
+	}
+
+}
